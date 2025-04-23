@@ -1,0 +1,144 @@
+1.what is aws ?
+
+aws is standard for amazon web service. aws is a platfrom that provides on-demand resource the hosting webserver,stroage,networking,database and other resources over the internet using pay-as-you-go-pricing-model.
+
+2.what are the components of aws?
+
+elastic compute cloud(ec2),simple storage service(s3),route53,cloud watch,elastic black storage(ebs),key-pairs few of the components of ec2.
+
+3.what is key-pair?
+
+key-pair is a secure login information for your instance and virtual machines.connect to the instance use in key-pair that contains a public key or private key.
+
+4.what is s3?
+
+s3 is standard for simple storage service.it is a storage service that contains interface between that you can use to store any amount of data,at anytime,from anywhere in the world.with s3 you pay only for what we use and payment model is pay-as-you-go-pricing-model.
+
+5.what are the pricing model of ec2?
+ * on-demand
+ * reserved 
+ * spot 
+ * dedicated
+ * scheduled
+
+6.what are the types of volumes in ec2?
+
+ there are 2 types volumes 
+ 1.instance store volumes
+ 2.elastic block store
+
+7.what are the elastic block store?
+
+ebs standard for elastic block storage.they are presistant volumes that can attach to the instance.with ebs volumes,they data will be preserved even when you want to stop your instance.unlike,your instance store volumes data will be deleted when you stop your instance.
+
+8.what are the types of volume in ebs?
+ * general purpose
+ * provisioned IOPS
+ * magnetic 
+ * cold HDD 
+ * throughput optimized
+
+9.what are types of instances in ec2?
+ * general purpose
+ * memory optimized
+ * computer optimized
+ * storage optimized 
+ * accelerated computeing
+
+10.what is auto-scaleing and what are the components?
+
+auto scaleing allow you to automatically scale-up and scale-down the no of instance dependency of cpu utilization and memory utilization.
+    there are 2 components
+     1.auto scaleing group
+     2.lanuch confriguration
+
+11.reserved instance?
+
+reserve instance are the instance that you can reserve a fixed capacity of ec2 insance.reserve instace you will have get into a contract 1 year 0r 3 year commitment.
+
+12.what is ami?
+
+ami standard for amazom machine image.ami is a template that contains software confriguration ,launch permission and a block device mapping that specific volumes attach to the instance when it is launched .
+
+13.what is EIP?
+
+Eip standard for eastic ip address.it is designed for dynamic cloud computeing.when you want have a static ip address for your instance stop and restart your instance,will be use in elasatic ip address.
+
+14.what is cloud watch?
+
+cloud watch is a monitoring tool that you can use to monitor yout various aws resources.like healthcheck,application,network
+
+15.what are the types of cloud watch?
+
+ 1.basic monitoring
+   * free
+ 2.detailed monitoring
+   * chargeble
+
+16. what are cloudwatch metrics that are available for ec2 instance?
+ 
+Diskreads,Diskwrites,Cpu Utilization,NetworkpaketIN,NetworkpaketOUT,NetworkIN ,NetworkOUT,Cpucreditusage,CPUCreditBalanance.
+
+17.what are the maximum and minimum object storage in s3?
+  maximum = o byte
+  minimum = 5 tb
+
+18.diifrenrt types of storage classes?
+ * standard frequency accessed 
+ * standard infrequency accessed
+ * glacier 
+ * reduced redudency accessed 
+ * onezone frequency accessed
+
+19. what is the deault storage class in s3?
+ans. standard frequency accessed 
+
+20. what is glacier?
+
+glacier is backup or archival tool that you can use to back of data in s3.
+
+21.how can you secure the access to you s3 bucket?
+
+two ways of control the access your s3 bucket
+ * ACL (access control list)
+ * bucket policies
+22. encryption data in s3?
+ * server side encryption - s3(AES 256 encryption)
+ * server side encryption - KMS(key management service)
+ * server side encryption - C (client side)
+
+23. pricing model of s3?
+ * storage used 
+ * data transfer
+ * transfer acceleration 
+ * data management
+ * no of resources to you make
+24. what is IAM ?
+IAM standard for Identity Access and Management.
+
+* IAM is a global service.
+* IAM is a life time service.
+* IAM allow you to mange users and their level of access to the aws console.
+* IAM is used to control who is autencticated and who is autherzation to access all aws resources.
+* IAM is used to roles, permission and uers.
+
+25.compnents of IAM?
+ * users
+ * roles
+ * user groups
+ * policies 
+26.diffrence between root user and IAM user?
+
+root-user
+----------------
+1.root user is the account owner and full access on the aws account.
+2.frist sign up for aws account.
+3 create email and password create on aws account.
+4.critical administrative tasks
+IAM -user
+------------
+1.IAM created by root user.
+2.premisions assigned it.
+3.IAM created by username and password.
+4.day-to-day tasks.
+
